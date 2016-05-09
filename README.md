@@ -4,12 +4,12 @@
 [![forthebadge](http://forthebadge.com/images/badges/compatibility-betamax.svg)](http://forthebadge.com)
 
 ## technologies used
-  -C++
-  -Arduino
-  -OpenCV
+-C++
+-Arduino
+-OpenCV
   
 ## dependencies
-  -OpenCV
-  -version ^3.1
+-OpenCV
+-version ^3.1
 ## Project status
-  -ver : 0
+-ver : 0
