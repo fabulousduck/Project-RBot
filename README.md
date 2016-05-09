@@ -16,7 +16,7 @@
 - ver : 0.02
 
 ## Todo's
-- [] Color detection.
-- [] Shape detection.
-- [] Communication with arduino counterpart.
+- [ ] Color detection.
+- [ ] Shape detection.
+- [ ] Communication with arduino counterpart.
 - [x] Spend time eating cookies. 
