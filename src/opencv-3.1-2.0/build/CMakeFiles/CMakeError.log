@@ -1,0 +1,245 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2d4eb/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2d4eb.dir/build.make CMakeFiles/cmTC_2d4eb.dir/build
+Building C object CMakeFiles/cmTC_2d4eb.dir/TestEndianess.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_2d4eb.dir/TestEndianess.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_2d4eb
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d4eb.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2d4eb.dir/TestEndianess.c.o  -o cmTC_2d4eb  
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7e953/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7e953.dir/build.make CMakeFiles/cmTC_7e953.dir/build
+Building C object CMakeFiles/cmTC_7e953.dir/OFF64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_7e953.dir/OFF64_T.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:19:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/usr/include/sys/_types/_off_t.h:30:25: note: 'off_t' declared here
+typedef __darwin_off_t          off_t;
+                                ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:20:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/usr/include/sys/_types/_off_t.h:30:25: note: 'off_t' declared here
+typedef __darwin_off_t          off_t;
+                                ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:21:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/usr/include/sys/_types/_off_t.h:30:25: note: 'off_t' declared here
+typedef __darwin_off_t          off_t;
+                                ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:22:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/usr/include/sys/_types/_off_t.h:30:25: note: 'off_t' declared here
+typedef __darwin_off_t          off_t;
+                                ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:23:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/usr/include/sys/_types/_off_t.h:30:25: note: 'off_t' declared here
+typedef __darwin_off_t          off_t;
+                                ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_7e953.dir/OFF64_T.c.o] Error 1
+make: *** [cmTC_7e953/fast] Error 2
+
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10c85/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_10c85.dir/build.make CMakeFiles/cmTC_10c85.dir/build
+Building C object CMakeFiles/cmTC_10c85.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_10c85.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_10c85.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_10c85/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc3ba/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cc3ba.dir/build.make CMakeFiles/cmTC_cc3ba.dir/build
+Building C object CMakeFiles/cmTC_cc3ba.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles/cmTC_cc3ba.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cc3ba
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc3ba.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_cc3ba.dir/CheckFunctionExists.c.o  -o cmTC_cc3ba  
+Undefined symbols for architecture x86_64:
+  "_jbg_newlen", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_cc3ba] Error 1
+make: *** [cmTC_cc3ba/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_188ed/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_188ed.dir/build.make CMakeFiles/cmTC_188ed.dir/build
+Building C object CMakeFiles/cmTC_188ed.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_188ed.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_188ed.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_188ed/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65e09/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_65e09.dir/build.make CMakeFiles/cmTC_65e09.dir/build
+Building C object CMakeFiles/cmTC_65e09.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_65e09.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_65e09.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_65e09/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b6c8/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3b6c8.dir/build.make CMakeFiles/cmTC_3b6c8.dir/build
+Building C object CMakeFiles/cmTC_3b6c8.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_3b6c8.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3b6c8.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_3b6c8/fast] Error 2
+
+
+Determining if the include file libavformat/avformat.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d88c6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d88c6.dir/build.make CMakeFiles/cmTC_d88c6.dir/build
+Building C object CMakeFiles/cmTC_d88c6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_d88c6.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libavformat/avformat.h' file not found
+#include <libavformat/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d88c6.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_d88c6/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_51b63/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_51b63.dir/build.make CMakeFiles/cmTC_51b63.dir/build
+Building C object CMakeFiles/cmTC_51b63.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTC_51b63.dir/CheckIncludeFile.c.o   -c /Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'ffmpeg/avformat.h' file not found
+#include <ffmpeg/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_51b63.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_51b63/fast] Error 2
+
+

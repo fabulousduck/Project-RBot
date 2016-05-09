@@ -1,0 +1,17 @@
+# Target labels
+ Main
+ opencv_highgui
+ AccuracyTest
+# Source files and their labels
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/highgui/test/test_gui.cpp
+ Main
+ opencv_highgui
+ AccuracyTest
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/highgui/test/test_main.cpp
+ Main
+ opencv_highgui
+ AccuracyTest
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/highgui/test/test_precomp.hpp
+ Main
+ opencv_highgui
+ AccuracyTest

@@ -1,0 +1,47 @@
+# Target labels
+ Main
+ opencv_videoio
+ Module
+# Source files and their labels
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/include/opencv2/videoio.hpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/include/opencv2/videoio/videoio.hpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/include/opencv2/videoio/cap_ios.h
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/include/opencv2/videoio/videoio_c.h
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/cap.cpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/cap_images.cpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/cap_mjpeg_encoder.cpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/cap_mjpeg_decoder.cpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/cap_qtkit.mm
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/modules/videoio/src/precomp.hpp
+ Main
+ opencv_videoio
+ Module
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/cvconfig.h
+/Users/ryanvlaming/Desktop/CPP/FRS/src/opencv-3.1-2.0/build/opencv2/opencv_modules.hpp
