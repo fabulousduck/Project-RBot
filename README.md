@@ -8,7 +8,8 @@ Project GroundHawk is a project done by 2 students at MediaCollege Amsterdam.
 The perpose of this project is to see how difficult it would be to make a working turret that can detect targets.
 
 ## setup
-We will post pictures of the finished project here later
+![alt tag](http://mediadev.nl/groundhawk/setup1.jpg)
+
 
 ## technologies used
 - C
